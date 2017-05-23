@@ -1,0 +1,56 @@
+body {
+
+	 margin-top: 3cm;
+    background-color: #41c7f4;
+
+}
+h1{
+	color: blue;
+}
+#button {
+     
+  
+  
+  border-radius: 28px;
+  font-family: italic;
+  font-style: italic;
+  color: #778543;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+#email_errormessage{
+  color: red;
+  margin-left: 3cm;
+}
+#password_errormessage{
+  color: red;
+  margin-left: 3cm;
+}
+#username_errormessage{
+  color: red;
+  margin-left: 3cm;
+}
+#country{
+  color: black;
+}
+User name{
+  color: red;
+}
+#radio{
+  color: red;
+  margin-left: 3cm;
+}
+#int{
+  color: red;
+  margin-left: 3cm;
+}
+#ctry{
+  color: red;
+  margin-left: 3cm;
+}
+#cou{
+  color: red;
+  margin-left: 3cm
+}

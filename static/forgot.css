@@ -1,0 +1,9 @@
+h1{ margin-top: 2cm;
+	color: green;
+}
+body{
+	background-image: url('images/forgot.gif');
+	background-repeat: no-repeat;
+	background-position: center; 
+	margin-top: 2cm
+}

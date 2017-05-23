@@ -1,0 +1,40 @@
+body {
+
+	 margin-top: 3cm;
+    background-color: pink;
+
+}
+h1{
+	color: blue;
+}
+#button {
+     
+  
+  
+  border-radius: 28px;
+  font-family: italic;
+  font-style: italic;
+  color: #778543;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+#email_errormessage{
+  color: red;
+  margin-left: 3cm;
+}
+#password_errormessage{
+  color: red;
+  margin-left: 3cm;
+}
+#username_errormessage{
+  color: red;
+  margin-left: 3cm;
+}
+#country{
+  color: red;
+}
+User name{
+  color: red;
+}

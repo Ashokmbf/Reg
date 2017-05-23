@@ -1,0 +1,27 @@
+  
+     {% load staticfiles %}
+
+  <center>
+  	<html>
+  	<head>
+  		<link rel="stylesheet" href="{% static 'home.css' %}">
+
+  	</head>
+  	<body>
+  		<form action="{% url 'polls:home' %}" method="post">
+  	    {% csrf_token %}
+  	     <div>{{add}}</div>
+  	<h1>Welcome to my Application<br><br>
+  		<a href="/signup/">Please Register Here</a><br><br><br>
+  		<a href="/login/">Login Here</a>
+  
+
+  
+ 
+  </body>
+  </html>
+  </center>
+
+
+
+  

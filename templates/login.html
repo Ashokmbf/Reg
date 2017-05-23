@@ -1,0 +1,58 @@
+       
+      
+       {% load staticfiles %}
+       <center>
+     <html>  
+     <head>
+      <body>
+        <form action="{% url 'polls:login' %}" method="post" novalidate>
+        {% csrf_token %}
+      <link rel="stylesheet" href="{% static 'two.css' %}"></head>
+     </head> 
+        
+        <div>{{field}}</div> 
+          <h1>Welcome Back!</h1>
+          {% if messages %}
+<ul class="messages">
+  {% for message in messages %}
+  <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+  {% endfor %}
+</ul>
+{% endif %}
+          
+          
+            <div class="field-wrap">
+            <label>
+              Email Address:
+            </label>
+             <input type="email" id="email"name="email" value=""required autocomplete="off"/>
+          </div><span class="req" id="email_errormessage"></span><br><br>
+          
+          <div class="field-wrap" >
+            <label>
+              Password:
+            </label>
+           <input type="password" id="password" name="password" required autocomplete="off"><br><span class="pass" id="password_errormessage"></span><br>
+
+          </div>
+          
+          <a href="/forgot/">Forgot Password?</a>
+          <a href="/signup/">signup here</a></p>
+
+          <input type="submit" id="button" value="login"><br><br>
+          
+          
+       <a href="{% url 'social:begin' 'facebook' %}?next={{ request.path }}">Login with Facebook</a>|
+       <a href="{% url 'social:begin' 'twitter' %}?next={{ request.path }}">Login with Twitter</a>
+        
+        <a href="{% url 'social:begin' 'google-oauth2' %}?next={{ request.path }}">Login with Google</a>
+          
+          </form>
+          <script type="text/javascript" src="{% static 'Js/jquery.min.js' %}"></script>
+          <script type="text/javascript" src="{% static 'Js/login.js' %}"></script>
+        </body>
+      </html>
+      </center>
+
+
+

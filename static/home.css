@@ -1,0 +1,13 @@
+h1{ margin-top: 2cm;
+	color: yellow;
+}
+body{
+	background-image: url('images/509099.jpg');
+	 
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+a{
+	color: red;
+
+}

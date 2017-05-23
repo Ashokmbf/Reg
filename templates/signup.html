@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+<head>
+
+<link rel="stylesheet" href="{% static 'one.css' %}"></head>
+
+<body>
+  <form action="{% url 'polls:signup' %}" method="post" name="signup" novalidate>
+        {% csrf_token %}
+<center>
+  <div>{{data}}</div>
+<h1>Register Here</h1>
+
+  <div id="un">User name:<input type="text" id="username" name="username" value="" required autocomplete="off"></div><span class="error_form" id="username_errormessage"></span>
+  <br><br>
+ 
+            <div class="field-wrap">
+            <label>
+              Email Address
+            </label>
+
+            <input type="email" id="email" name="email"  value=""required autocomplete="off"/><div><span class="req" id="email_errormessage"></span>
+          </div><br><br>
+<div>password :
+<input type="password" id="password"name="password"  required autocomplete="off"></div><span class="pass" id="password_errormessage"></span><br><br>
+
+  Gender:
+  <input type="radio" id="radio1" name="gender" value='1' required> Male
+  <input type="radio" id="radio2" name="gender" value='2'> Female
+  <input type="radio"id="radio3"name="gender" value='3'>Others<br><span class="rad"id="radio"></span><br><br>
+
+ Interested In:
+<input class="messageCheckbox" type="checkbox" id="check"name="intrest"  value='1' required autofocus>Java
+<input class="messageCheckbox" type="checkbox" name="intrest"  value='2' >Python 
+<input  class="messageCheckbox" type="checkbox" name="intrest"  value='3' >Android <br><span class="cls"id="int"></span><br><br>
+ 
+Countries : <select name="country" id="country" required autocomplete="off">
+   
+  <option value=''>Select country</option>
+  <option value='1'>India</option>
+  <option  value='2'>Portugal</option>
+  <option  value='3'>Argentina</option>
+  <option  value='4'>Germany</option>
+  
+</select><br><span class="cnt" id="cou"></span><br><br><br>
+
+      <input type="submit" id="button" ><br><br>
+      
+      <a href="/login/">If you have Already Login Here</a>
+      
+
+     
+</form> 
+</center>
+
+<script type="text/javascript" src="{% static 'Js/jquery.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'Js/validation.js' %}"></script>
+
+</body>
+</html>
+
+
